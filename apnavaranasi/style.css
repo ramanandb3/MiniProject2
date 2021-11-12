@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0, 0, 0,0.3),rgba(0, 0, 0, 0.1)), url(varanasi.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+nav{
+    width: 100%; height: 10vh;
+    background:rgba(0,0,0,0.1);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .logo{
+    width: 25%;
+    text-align: center;
+}
+nav .menu{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+}
+nav .menu a{
+    width: 25%;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+nav .menu a:hover{
+    color: #00b894;
+}
+main{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+section{
+
+}
+section h3{
+    font-size: 35px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 2px black;
+}
+section h1{
+    font-size: 55px;
+    font-weight: 700;
+    text-shadow: 2px 1px 5px black;
+    text-transform: uppercase;
+    margin: 30px 0 20px 0;
+}
+section p{
+    font-size: 25px;
+    word-spacing: 2px;
+    margin-bottom:25px;
+    text-shadow: 1px 1px 1px black;
+}
+section a{
+    padding: 12px 30px;
+    border-radius: 4px;
+   
+    text-decoration:none;
+    margin: 25px;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    outline: none;
+    transition: all 0.5s ease;
+    
+}
+section .btn1{
+    background-color: white;
+    color: black;
+}
+section .btn1:hover{
+    background-color: #00b894;
+    color: white;
+    
+}
+section .btn2{
+    background-color: #00b894;
+    color: white;
+}
+section .btn2:hover{
+    background-color: white;
+    color: black;
+    
+}
+.change_content:after{
+    content: '';
+    animation: changetext 10s infinite linear;
+    color:  #00b894;
+}
+@keyframes changetext{
+    0%{content: "Assi-Ghat";}
+    20%{content: "Dasaswamedh-Ghat";}
+    35%{content: "Ganges River";}
+    60%{content: "Sarnath";}
+    80%{content: "Shri Kashi Vishwanath Temple";}
+    100%{content: "Banaras Hindu University";}
+}
